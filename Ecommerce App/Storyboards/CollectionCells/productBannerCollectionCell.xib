@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productBannerCollectionCell" id="gTV-IL-0wX" customClass="productBannerCollectionCell" customModule="Ecommerce_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="189"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="189"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcF-Bm-PfC" customClass="LetsView" customModule="Ecommerce_App" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="189"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="productBanner" translatesAutoresizingMaskIntoConstraints="NO" id="Hui-Qo-H1u">
+                                <rect key="frame" x="5" y="5" width="325" height="179"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="189" id="CaX-Rf-7Qi"/>
+                            <constraint firstAttribute="bottom" secondItem="Hui-Qo-H1u" secondAttribute="bottom" constant="5" id="Qbh-Ov-xk6"/>
+                            <constraint firstItem="Hui-Qo-H1u" firstAttribute="top" secondItem="fcF-Bm-PfC" secondAttribute="top" constant="5" id="RDm-ae-T36"/>
+                            <constraint firstAttribute="trailing" secondItem="Hui-Qo-H1u" secondAttribute="trailing" constant="5" id="bVE-Ef-VbC"/>
+                            <constraint firstItem="Hui-Qo-H1u" firstAttribute="leading" secondItem="fcF-Bm-PfC" secondAttribute="leading" constant="5" id="jlc-AV-aPL"/>
+                            <constraint firstAttribute="width" constant="335" id="me6-lZ-UOX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fcF-Bm-PfC" secondAttribute="bottom" id="BOf-hV-5Jk"/>
+                <constraint firstItem="fcF-Bm-PfC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DZ9-jj-hQk"/>
+                <constraint firstItem="fcF-Bm-PfC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lFp-kl-0RM"/>
+                <constraint firstAttribute="trailing" secondItem="fcF-Bm-PfC" secondAttribute="trailing" id="nJX-va-Eas"/>
+            </constraints>
+            <point key="canvasLocation" x="10.687022900763358" y="-32.04225352112676"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="productBanner" width="343" height="213"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
